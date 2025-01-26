@@ -21,7 +21,7 @@ export async function getStaticProps() {
 	console.log("I am running just on the server");
 	// Call an external API endpoint to get posts.
 	// You can use any data fetching library
-	const res = await fetch("http://localhost:4001/posts");
+	const res = await fetch("https://jsonplaceholder.typicode.com/posts?_limit=5");
 	const posts = await res.json();
 
 	// By returning { props: { posts } }, the Blog component
