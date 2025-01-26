@@ -5,8 +5,8 @@ const RootLayout = ({children}) => {
   return (
     <div>
       <nav>
-        <li>Home</li>
-        <li>About</li>
+        <Link href={"/"}><li>Home</li></Link>
+        <Link href="/about"><li>About</li></Link>
         <Link href="/posts"><li>Posts</li></Link>
       </nav>
       {children}
